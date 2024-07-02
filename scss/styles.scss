@@ -38,16 +38,20 @@ body{
 
     /* tablet */
     @media screen and (min-width: $smartphone) and (max-width: $notebook) {
-        display: block;
-        width: 100%;
+        display: none; // deactivated for now
+        position: relative;
         scale: (3);
+        left: 100px;
+        top: 20px;
       }
   
       /* smartphone */
       @media screen and (min-width: 0px) and (max-width: $smartphone) {
-        display: block;
-        width: 100%;
+        display: none; // deactivated for now
+        position: relative;
         scale: (3);
+        left: 100px;
+        top: 20px;
       }
 }
 
@@ -59,7 +63,7 @@ body{
 /* tablet */
 @media screen and (min-width: $smartphone) and (max-width: $notebook) {
     .menu{
-        display: none;
+        display: block;
         overflow: hidden;
         flex-direction: column;
         background-color: #dc3545;
@@ -86,7 +90,7 @@ body{
   /* smartphone */
   @media screen and (min-width: 0px) and (max-width: $smartphone) {
     .menu{
-        display: none;
+        display: block;
         overflow: hidden;
         flex-direction: column;
         background-color: #dc3545;

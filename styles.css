@@ -36,16 +36,20 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .side-menu {
-    display: block;
-    width: 100%;
+    display: none;
+    position: relative;
     scale: 3;
+    left: 100px;
+    top: 20px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .side-menu {
-    display: block;
-    width: 100%;
+    display: none;
+    position: relative;
     scale: 3;
+    left: 100px;
+    top: 20px;
   }
 }
 
@@ -57,7 +61,7 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .nav .menu {
-    display: none;
+    display: block;
     overflow: hidden;
     flex-direction: column;
     background-color: #dc3545;
@@ -80,7 +84,7 @@ body {
 }
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .nav .menu {
-    display: none;
+    display: block;
     overflow: hidden;
     flex-direction: column;
     background-color: #dc3545;
