@@ -1,0 +1,146 @@
+@import "variables";
+
+body{
+    font-family: 'Poppins', 'Trebuchet MS', sans-serif;
+}
+
+.logo {
+    position: relative;
+    top: 37px;
+}
+
+.side-menu{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    /* Toggle menu icon */
+#side-menu:checked ~.menucontent {
+    display: block !important;
+  }
+  .side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+  }
+  .side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+  }
+
+    /* tablet */
+    @media screen and (min-width: $smartphone) and (max-width: $notebook) {
+        display: block;
+        width: 100%;
+        scale: (3);
+      }
+  
+      /* smartphone */
+      @media screen and (min-width: 0px) and (max-width: $smartphone) {
+        display: block;
+        width: 100%;
+        scale: (3);
+      }
+}
+
+
+.nav {
+        padding: 24px;
+        display: block;
+
+/* tablet */
+@media screen and (min-width: $smartphone) and (max-width: $notebook) {
+    .menu{
+        display: none;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: #dc3545;
+        width: 100%;
+        height: 100%;
+        ul{
+            list-style: none;
+        }
+        li{
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s ease;
+                color: white;
+            }
+            a:hover{
+                color: #e84e0f;
+                background-color: white;
+            }
+        }
+    }
+}
+
+  /* smartphone */
+  @media screen and (min-width: 0px) and (max-width: $smartphone) {
+    .menu{
+        display: none;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: #dc3545;
+        width: 100%;
+        height: 100%;
+        ul{
+            list-style: none;
+        }
+        li{
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s ease;
+                color: white;
+            }
+            a:hover{
+                color: #e84e0f;
+                background-color: white;
+            }
+        }
+    }
+  }
+        ul{
+            list-style: none;
+        }
+        li{
+            a{
+                text-decoration: none;
+                color: #e84e0f;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+            a:hover{
+                color: black;
+            }
+        }
+    }
+    .divider{
+        margin-top: 30px;
+        border-bottom: 2px lightgray solid;
+        -webkit-box-shadow: 0 4px 6px -6px gray;
+            -moz-box-shadow: 0 4px 6px -6px gray;
+                box-shadow: 0 4px 6px -6px gray;
+    }
+
+.menu{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    float: right;
+    bottom: 68px;
+    padding: 20px;
+}
+
+
+.article{
+    padding: 50px;
+    h1{
+        margin: 0;
+    }
+    p{
+        margin: 0;
+    }
+}

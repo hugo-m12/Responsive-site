@@ -1,0 +1,135 @@
+body {
+  font-family: "Poppins", "Trebuchet MS", sans-serif;
+}
+
+.logo {
+  position: relative;
+  top: 37px;
+}
+
+.side-menu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  /* Toggle menu icon */
+  /* tablet */
+  /* smartphone */
+}
+.side-menu #side-menu:checked ~ .menucontent {
+  display: block !important;
+}
+.side-menu .side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu .side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.side-menu .side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .side-menu {
+    display: block;
+    width: 100%;
+    scale: 3;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .side-menu {
+    display: block;
+    width: 100%;
+    scale: 3;
+  }
+}
+
+.nav {
+  padding: 24px;
+  display: block;
+  /* tablet */
+  /* smartphone */
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .nav .menu {
+    display: none;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #dc3545;
+    width: 100%;
+    height: 100%;
+  }
+  .nav .menu ul {
+    list-style: none;
+  }
+  .nav .menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    color: white;
+  }
+  .nav .menu li a:hover {
+    color: #e84e0f;
+    background-color: white;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .nav .menu {
+    display: none;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #dc3545;
+    width: 100%;
+    height: 100%;
+  }
+  .nav .menu ul {
+    list-style: none;
+  }
+  .nav .menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    color: white;
+  }
+  .nav .menu li a:hover {
+    color: #e84e0f;
+    background-color: white;
+  }
+}
+.nav ul {
+  list-style: none;
+}
+.nav li a {
+  text-decoration: none;
+  color: #e84e0f;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav li a:hover {
+  color: black;
+}
+
+.divider {
+  margin-top: 30px;
+  border-bottom: 2px lightgray solid;
+  box-shadow: 0 4px 6px -6px gray;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  position: relative;
+  float: right;
+  bottom: 68px;
+  padding: 20px;
+}
+
+.article {
+  padding: 50px;
+}
+.article h1 {
+  margin: 0;
+}
+.article p {
+  margin: 0;
+}/*# sourceMappingURL=styles.css.map */
