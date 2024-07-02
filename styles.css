@@ -2,6 +2,11 @@ body {
   font-family: "Poppins", "Trebuchet MS", sans-serif;
 }
 
+.header {
+  border-bottom: 2px lightgray solid;
+  box-shadow: 0 4px 6px -6px gray;
+}
+
 .logo {
   position: relative;
   top: 37px;
@@ -107,12 +112,6 @@ body {
 }
 .nav li a:hover {
   color: black;
-}
-
-.divider {
-  margin-top: 30px;
-  border-bottom: 2px lightgray solid;
-  box-shadow: 0 4px 6px -6px gray;
 }
 
 .menu {
