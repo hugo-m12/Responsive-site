@@ -21,7 +21,7 @@ body{
     position: absolute;
     z-index: 10;
     /* Toggle menu icon */
-#side-menu:checked ~.menucontent {
+#side-menu:checked ~.nav.menu {
     display: block !important;
   }
   .side-menu:checked ~ .hamb .hamb-line {

@@ -20,7 +20,7 @@ body {
   /* tablet */
   /* smartphone */
 }
-.side-menu #side-menu:checked ~ .menucontent {
+.side-menu #side-menu:checked ~ .nav.menu {
   display: block !important;
 }
 .side-menu .side-menu:checked ~ .hamb .hamb-line {
